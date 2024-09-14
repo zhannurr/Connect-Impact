@@ -37,8 +37,41 @@
     </div>
 </section>
 
+<section>
+    <h1 style="text-align: center; font-size: 40px;"> <b>Learn New Skils with Top Mentors</b></h1>
+    <p style="display:flex; text-align: center; ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae eveniet fugit libero obcaecati iusto, nihil repellat quo excepturi voluptatum ducimus error dolorem recusandae cupiditate rerum quia porro reiciendis commodi tempora.</p>
+    <h2 style="text-align: center; font-size: 40px;"><b>Our Mentors</b></h2>
+</section>
+
+<section id="mentor-filters">
+    <h2>Filter Mentors</h2>
+    <form id="mentor-filter-form">
+        <label for="gender">Gender:</label>
+        <select id="gender">
+            <option value="all">All</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="specialization">Specialization:</label>
+        <select id="specialization">
+            <option value="all">All</option>
+            <option value="Leadership">Leadership</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Design">UI-UX Design</option>
+            <option value="Development">Development</option>
+        </select>
+
+        <label for="rating">Rating:</label>
+        <input type="range" id="rating" min="100" max="500" step="50" value="100" oninput="document.getElementById('rating-value').textContent = this.value;">
+        <span id="rating-value">100</span>
+
+        <button type="button" onclick="filterMentors()">Search</button>
+    </form>
+</section>
+
+
 <section id="mentors" class="mentors-section">
-    <h2>Our Mentors</h2>
     <div class="mentor-grid">
         <div class="mentor-card">
             <img src="images/mentor1.jpeg" alt="Mentor 1">
@@ -51,15 +84,27 @@
             <p>Marketing & Sales</p>
         </div>
 
-        <!-- <div class="mentor-card">
-            <img src="images/mentor3.jpeg" alt="Mentor 3">
-            <h3>Sana Bagym</h3>
-            <p>Ai Master</p>
-        </div> -->
+        <div class="mentor-card">
+            <img src="images/mentor3.jpg" alt="Mentor 3">
+            <h3>Mary John</h3>
+            <p>UI-UX Designer</p>
+        </div>
        
+        <div class="mentor-card">
+            <img src="images/mentor4.jpg" alt="Mentor 4">
+            <h3>Sara</h3>
+            <p>Manager</p>
+        </div>
+
+        <div class="mentor-card">
+            <img src="images/mentor5.jpg" alt="Mentor 5">
+            <h3 id="name">Mark</h3>
+            <p>Developer</p>
+        </div>
+
+        
     </div>
 </section>
-
 
 <section id="success-stories" class="success-section">
     <h2>Success Stories</h2>
