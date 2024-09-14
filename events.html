@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Events</title>
     <link rel="stylesheet" href="style_events.css">
-    </style>
 </head>
 <body>
 <header>
@@ -17,15 +16,103 @@
             <li><a href="events.html">Events</a></li>
             <li><a href="mentorship.html">Mentorship</a></li>
             <li><a href="petadoption.html">Pet Adoption</a></li>
-            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="#contacts">Contacts</a></li>
         </ul>
     </nav>
 
     <div class="right-side">
-        <a href="#"><img src="icons/facebook.png"></a>
-        <a href="#"><img src="icons/vkontakte.png"></a>
-        <a href="#"><img src="icons/instagram.png"></a>
+        <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="icons/vkontakte.png" alt="Vkontakte"></a>
+        <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
         <a href="login.html"><button class="signup-btn">Profile</button></a>
         <div class="lang-switch"><a href="#">KZ</a></div>
     </div>
 </header>
+
+<main>
+    
+    <section class="welcome">
+        <div class="welcome-message">
+            <h1 style="color: white; text-align: center;">Explore Our Events!</h1>
+            <p style="color: white; text-align: center;">Join us for a variety of exciting events and activities designed to engage and inspire.</p>
+        </div>
+    </section>
+
+    <!-- <div class="filter">
+        <label for="date-filter">Sort by Date: </label>
+        <select id="date-filter">
+            <option value="upcoming">Upcoming Events</option>
+            <option value="past">Past Events</option>
+        </select>
+    </div> -->
+    
+
+    <section class="events-list">
+        <div class="container">
+            <article class="event-item">
+                <img src="images/event1.jpg" alt="Event 1 Image" class="event-img">
+                <h2>Event Title 1</h2>
+                <p>Date: November 15, 2024</p>
+                <p>Location: Event Hall B</p>
+                <p>Description: Nulla facilisi. Proin sollicitudin, mauris non gravida aliquam, elit nunc tincidunt lacus, vel lacinia turpis.</p>
+                <a href="#" class="btn">More Details</a>
+                <a href="signup.html" class="btn register-btn">Register Now</a>
+            </article>
+            
+            <article class="event-item">
+                <img src="images/event1.jpg" alt="Event 1 Image" class="event-img">
+                <h2>Event Title 1</h2>
+                <p>Date: November 15, 2024</p>
+                <p>Location: Event Hall B</p>
+                <p>Description: Nulla facilisi. Proin sollicitudin, mauris non gravida aliquam, elit nunc tincidunt lacus, vel lacinia turpis.</p>
+                <a href="#" class="btn">More Details</a>
+                <a href="signup.html" class="btn register-btn">Register Now</a>
+            </article>
+
+            <article class="event-item">
+                <img src="images/event1.jpg" alt="Event 1 Image" class="event-img">
+                <h2>Event Title 1</h2>
+                <p>Date: November 15, 2024</p>
+                <p>Location: Event Hall B</p>
+                <p>Description: Nulla facilisi. Proin sollicitudin, mauris non gravida aliquam, elit nunc tincidunt lacus, vel lacinia turpis.</p>
+                <a href="#" class="btn">More Details</a>
+                <a href="signup.html" class="btn register-btn">Register Now</a>
+            
+            </article>
+            
+            <article class="event-item">
+                <img src="images/event1.jpg" alt="Event 1 Image" class="event-img">
+                <h2>Event Title 1</h2>
+                <p>Date: November 15, 2024</p>
+                <p>Location: Event Hall B</p>
+                <p>Description: Nulla facilisi. Proin sollicitudin, mauris non gravida aliquam, elit nunc tincidunt lacus, vel lacinia turpis.</p>
+                <a href="#" class="btn">More Details</a>
+                <a href="signup.html" class="btn register-btn">Register Now</a>
+            </article>
+
+            <article class="event-item">
+                <img src="images/event1.jpg" alt="Event 1 Image" class="event-img">
+                <h2>Event Title 1</h2>
+                <p>Date: November 15, 2024</p>
+                <p>Location: Event Hall B</p>
+                <p>Description: Nulla facilisi. Proin sollicitudin, mauris non gravida aliquam, elit nunc tincidunt lacus, vel lacinia turpis.</p>
+                <a href="#" class="btn">More Details</a>
+                <a href="signup.html" class="btn register-btn">Register Now</a>
+            </article>
+        
+        </div>
+    </section>
+    
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" allowfullscreen></iframe>
+    </div>
+
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">Top</button>
+</main>
+
+<footer>
+    <p>&copy; 2024 Connect&Impact. All rights reserved.</p>
+</footer>
+<script src="toTop.js" defer></script>
+</body>
+</html>
