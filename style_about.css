@@ -1,17 +1,19 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
+
     background-size: cover;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100vh;
 }
 
 header {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.771), rgba(0, 0, 0, 0.53));
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -72,8 +74,8 @@ nav ul li a:hover {
 .signup-btn {
     padding: 8px 15px;
     color: black;
-    font-weight:bolder;
-    background-color:#b6edd0;
+    font-weight: bolder;
+    background-color: #b6edd0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -81,7 +83,7 @@ nav ul li a:hover {
 }
 
 .signup-btn:hover {
-    background-color:chartreuse;
+    background-color: chartreuse;
 }
 
 .lang-switch {
@@ -96,4 +98,148 @@ nav ul li a:hover {
 
 .lang-switch a:hover {
     opacity: 1;
+}
+
+
+
+
+
+.title_sec {
+    background-color: #b6edd0;
+}
+
+.title_text {
+    font-size: 70px;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+
+
+/* Content Sections (Mission and Vision) */
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-content h2 {
+    margin-top: 0;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.image-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-content, .text-content {
+        padding: 10px;
+    }
+}
+
+
+footer {
+    background-color: #f2ebe0;
+    padding: 40px 20px;
+    text-align: left;
+  
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 12%;
+    
+}
+
+.footer-section {
+    
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.contact-info p,
+.newsletter p,
+.quick-links ul {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_h3 {
+    color: #333;
+    margin-bottom: 15px;
+
+}
+.footer_p{
+    color: #333;
+    margin-bottom: 15px;
+   
+}
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    background-color:darkolivegreen;
+    color: #fff;
+    border: none;
+    margin-top: 13px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color:darkolivegreen;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0; /* Добавлено для устранения отступов */
+}
+
+.quick-links ul li {
+    margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+    text-decoration: none;
+    color:darkolivegreen;
+}
+
+.quick-links ul li a:hover {
+    text-decoration: underline;
 }
