@@ -1,12 +1,10 @@
-html {
-    scroll-behavior: smooth;
-}
 body {
     margin: 0;
     padding: 0;
     background-size: cover;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100vh;
+    background: linear-gradient(to bottom, rgb(122, 90, 166), rgb(252, 177, 255));
 }
 
 header {
@@ -96,4 +94,133 @@ nav ul li a:hover {
 
 .lang-switch a:hover {
     opacity: 1;
+}
+
+.signup-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.signup-btn img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.signup-section {
+    max-width: 600px;
+    margin: 150px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-section form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.signup-section form button {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-section form button:hover {
+    background-color: #555;
+}
+
+.signup-section p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-section p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-section p a:hover {
+    text-decoration: underline;
+}
+
+.social-signup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-signup .signup-btn {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    color: #333;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.social-signup .signup-btn1 {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    background-color: blue;
+    color: white;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.social-signup button img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .logo, .right-side {
+        float: none;
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .signup-section {
+        padding: 10px;
+        margin: 20px;
+    }
 }

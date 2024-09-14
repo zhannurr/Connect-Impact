@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="style_signup.css">
-    </style>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://connect.facebook.net/en_US/sdk.js" async defer></script>
 </head>
 <body>
 <header>
@@ -22,10 +23,91 @@
     </nav>
 
     <div class="right-side">
-        <a href="#"><img src="icons/facebook.png"></a>
-        <a href="#"><img src="icons/vkontakte.png"></a>
-        <a href="#"><img src="icons/instagram.png"></a>
+        <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="icons/vkontakte.png" alt="Vkontakte"></a>
+        <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
         <a href="login.html"><button class="signup-btn">Profile</button></a>
         <div class="lang-switch"><a href="#">KZ</a></div>
     </div>
 </header>
+
+<main>
+    <section class="signup-section">
+        <h1>Sign Up</h1>
+        <form action="#" method="post">
+            <input type="text" id="fullname" placeholder="Full Name" required><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required><br>
+            <input type="text" id="country" placeholder="Country" required><br>
+            <input type="tel" id="phone" placeholder="Phone" required><br>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account?<a href="login.html">Log in</a></p>
+        </form>
+        <div class="social-signup">
+            <button class="signup-btn" id="google-signin">
+                <img src="icons/google.png" alt="Google"> Sign Up with Google
+            </button>
+            <button class="signup-btn1" id="facebook-signin">
+                <img src="icons/facebook.png" alt="Facebook"> Sign Up with Facebook
+            </button>
+        </div>
+    </section>
+</main>
+
+<script>
+    // Google Sign-In Initialization
+    function initGoogleSignIn() {
+        gapi.load('auth2', function() {
+            gapi.auth2.init({
+                client_id: 'YOUR_CLIENT_ID' // Замените на ваш Client ID
+            }).then(function(auth2) {
+                document.getElementById('google-signin').addEventListener('click', function() {
+                    auth2.signIn().then(function(googleUser) {
+                        var profile = googleUser.getBasicProfile();
+                        console.log('ID: ' + profile.getId());
+                        console.log('Name: ' + profile.getName());
+                        console.log('Image URL: ' + profile.getImageUrl());
+                        console.log('Email: ' + profile.getEmail());
+                    });
+                });
+            });
+        });
+    }
+
+    // Facebook Sign-In Initialization
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: 'YOUR_APP_ID', // Замените на ваш App ID
+            cookie: true,
+            xfbml: true,
+            version: 'v14.0'
+        });
+
+        FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    document.getElementById('facebook-signin').addEventListener('click', function() {
+        FB.login(function(response) {
+            if (response.authResponse) {
+                FB.api('/me', function(response) {
+                    console.log('Good to see you, ' + response.name + '.');
+                });
+            } else {
+                console.log('User cancelled login or failed.');
+            }
+        }, {scope: 'public_profile,email'});
+    });
+
+    initGoogleSignIn(); // Инициализация Google Sign-In
+</script>
+</body>
+</html>
