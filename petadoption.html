@@ -3,29 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Animal Adoption</title>
     <link rel="stylesheet" href="style_pet.css">
-    </style>
 </head>
 <body>
 <header>
-    <div class="logo">Connect&Impact</div>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="mentorship.html">Mentorship</a></li>
-            <li><a href="petadoption.html">Pet Adoption</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-        </ul>
-    </nav>
+  <img src="icons/Group 1.svg" alt="hh" class="logo">
+  <nav>
+      <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="mentorship.html">Mentorship</a></li>
+          <li><a href="petadoption.html">Pet Adoption</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+      </ul>
+  </nav>
 
-    <div class="right-side">
-        <a href="#"><img src="icons/facebook.png"></a>
-        <a href="#"><img src="icons/vkontakte.png"></a>
-        <a href="#"><img src="icons/instagram.png"></a>
-        <a href="login.html"><button class="signup-btn">Profile</button></a>
-        <div class="lang-switch"><a href="#">KZ</a></div>
-    </div>
+  <div class="right-side">
+      <a href="#"><img src="icons/facebook.png"></a>
+      <a href="#"><img src="icons/vkontakte.png"></a>
+      <a href="#"><img src="icons/instagram.png"></a>
+      <a href="signup.html"><button class="signup-btn">Profile</button></a>
+      <div class="lang-switch"><a href="#">KZ</a></div>
+  </div>
 </header>
+
+<main>
+    <section class="title_sec">
+        <h1 class="title_text">Find Your New Best Friend</h1>
+    </section>
+
+    <!-- Adoption Cards Section -->
+    <section class="adoption-cards">
+        <div class="card">
+            <img src="photo1.jpg" alt="Dog">
+            <h2>Max</h2>
+            <p>Breed: Labrador Retriever</p>
+            <p>Age: 2 years</p>
+            <button class="adopt-btn">Adopt</button>
+        </div>
+        <div class="card">
+            <img src="photo1.jpg" alt="Cat">
+            <h2>Luna</h2>
+            <p>Breed: Siamese</p>
+            <p>Age: 1 year</p>
+            <button class="adopt-btn">Adopt</button>
+        </div>
+        <!-- Add more cards as needed -->
+    </section>
+</main>
+
+
+<footer> 
+  <div class="footer-container"> 
+      <!-- Contact Information Section --> 
+      <div class="footer-section contact-info"> 
+          <h3 class="footer_h3">Women PWR</h3> 
+          <div class="footer_p">
+              <p>I'm a paragraph. Click here to add your own</p> 
+              <p>and edit me. Let your users get to know you.</p> 
+              <p><strong>Email:</strong> info@mysite.com</p> 
+              <p><strong>Phone:</strong> 123-456-7890</p> 
+              <p><strong>Registered Charity:</strong> 12345-67</p> 
+      
+          </div>
+          </div> 
+
+      <!-- Newsletter Signup Section --> 
+      <div class="footer-section newsletter"> 
+          <h3 class="footer_h3">Get Monthly Updates</h3> 
+          <form> 
+              <input type="email" placeholder="Enter your email here *" required> 
+              <div> 
+                  <input type="checkbox" id="subscribe"> 
+                  <label for="subscribe">Yes, subscribe me to your newsletter.</label> 
+              </div> 
+              <button type="submit">Sign Up!</button> 
+          </form> 
+      </div> 
+
+      <!-- Quick Links Section --> 
+      <div class="footer-section quick-links"> 
+          <h3 class="footer_h3">Quick Links</h3> 
+          <ul> 
+              <li><a href="#">About</a></li> 
+              <li><a href="#">Support Us</a></li> 
+              <li><a href="#">News</a></li> 
+              <li><a href="#">Events</a></li> 
+              <li><a href="#">Podcast</a></li> 
+              <li><a href="#">Contact</a></li> 
+          </ul> 
+      </div> 
+  </div> 
+</footer> 
+
+</body>
+</html>
