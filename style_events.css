@@ -99,22 +99,14 @@ nav ul li a:hover {
     opacity: 1;
 }
 
-main {
-    padding: 20px;
-    /* background-color: #07b1cf9d; */
-}
-
 .hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    background-image: url('event.jpg');
+    background-size: cover;
+    padding: 500px;
     color: white;
-    padding: 60px 20px;
     text-align: center;
 }
 
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 .hero h1 {
     font-size: 36px;
@@ -123,6 +115,40 @@ main {
 
 .hero p {
     font-size: 18px;
+}
+
+.about {
+    background-image: url('event.jpg');
+    background-size: cover;
+    padding: 160px 20px;
+    color: white;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about button {
+    background-color: #b6edd0;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.about button:hover {
+    background-color: chartreuse;
 }
 
 .events-list {
@@ -139,7 +165,7 @@ main {
 }
 
 welcome .container {
-    color: rgb(1, 28, 1);
+    color: white;
     background-color:rgba(253, 204, 10, 0.097);
     border-radius: 100px;
     padding: 80px;
@@ -188,10 +214,7 @@ footer {
     width: 100%;
 }
 
-main {
-    padding: 20px;
-    margin-top: 80px;
-}
+
 
 .events-list .container {
     display: flex;
@@ -205,7 +228,7 @@ main {
 .event-item {
     background-color: #09c57d21;
     border-radius: 8px;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(50% - 20px);
     margin-bottom: 20px;
@@ -229,7 +252,7 @@ main {
 
 .event-img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
 }
