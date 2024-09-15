@@ -73,9 +73,9 @@ nav ul li a:hover {
 
 .signup-btn {
     padding: 8px 15px;
-    color: wheat;
+    color: black;
     font-weight: bolder;
-    background-color: #ff5722;
+    background-color: #b6edd0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -83,7 +83,7 @@ nav ul li a:hover {
 }
 
 .signup-btn:hover {
-    background-color:gold;
+    background-color:chartreuse;
 }
 
 .lang-switch {
@@ -106,7 +106,7 @@ main {
 .about {
     background-image: url('images/book.webp');
     background-size: cover;
-    padding: 100px 20px;
+    padding: 160px 20px;
     color: white;
     text-align: center;
 }
@@ -123,8 +123,8 @@ main {
 }
 
 .about button {
-    background-color: #ff7f50;
-    color: white;
+    background-color: #b6edd0;
+    color: black;
     padding: 10px 20px;
     border: none;
     font-size: 18px;
@@ -134,7 +134,7 @@ main {
 }
 
 .about button:hover {
-    background-color: #ff5722;
+    background-color: chartreuse;
 }
 
 .section2 {
@@ -227,7 +227,7 @@ main {
 }
 
 .feedbacks {
-    background-color:#ffbaa5;
+    background-color:#b6edd0;
     text-align: center;
     padding: 50px 20px;
 }
@@ -290,7 +290,7 @@ main {
 }
 
 .join button {
-    background-color: #ff7f50;
+    background-color: darkolivegreen;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -300,9 +300,8 @@ main {
 }
 
 .join button:hover {
-    background-color: #ff5722;
+    background-color: chartreuse;
 }
-
 footer {
     background-color: #f2ebe0;
     padding: 40px 20px;
@@ -352,7 +351,7 @@ footer {
 }
 
 .newsletter button {
-    background-color:#ff7f50;
+    background-color:darkolivegreen;
     color: #fff;
     border: none;
     margin-top: 13px;
@@ -362,7 +361,7 @@ footer {
 }
 
 .newsletter button:hover {
-    background-color:#ff7f50;
+    background-color:darkolivegreen;
 }
 
 .quick-links ul {

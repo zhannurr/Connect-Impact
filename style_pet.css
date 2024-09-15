@@ -114,8 +114,9 @@ nav ul li a:hover {
 
 .title_sec {
     background-color: #609d2f;
+    color: white;
     text-align: center;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .welcome {
@@ -128,7 +129,7 @@ nav ul li a:hover {
 }
 
 welcome .container {
-    color: rgb(1, 28, 1);
+    color: white;
     background-color:rgba(253, 204, 10, 0.097);
     border-radius: 100px;
     padding: 80px;
