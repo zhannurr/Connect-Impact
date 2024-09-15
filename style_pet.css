@@ -106,17 +106,66 @@ nav ul li a:hover {
 
 .signup-btn {
     padding: 8px 15px;
-    background-color: #ffc107;
+    background-color: #609d2f;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .title_sec {
-    background-color: #ffc107;
+    background-color: #609d2f;
     text-align: center;
     padding: 50px 0;
 }
+
+.welcome {
+    background-image: url('event.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0px;
+    margin-top: -30px;
+    color: white;
+}
+
+welcome .container {
+    color: rgb(1, 28, 1);
+    background-color:rgba(253, 204, 10, 0.097);
+    border-radius: 100px;
+    padding: 80px;
+    width: 550px;
+    margin-left: 5%;
+   
+}
+
+
+
+
+
+
+.success-section {
+    padding: 50px;
+    margin-top: -90px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.success-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+}
+
+
 
 .adoption-cards {
     display: flex;
