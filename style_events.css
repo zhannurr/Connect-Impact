@@ -26,9 +26,9 @@ header {
 }
 
 .logo {
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
+    padding-top: 1%;
+    width: 150px;
+    height: 150px;
 }
 
 nav {
@@ -276,4 +276,88 @@ main {
 
 #scrollToTopBtn:hover {
     background-color: #555;
+}
+
+
+
+
+
+footer {
+    background-color: #f2ebe0;
+    padding: 40px 20px;
+    text-align: left;
+  
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 12%;
+    
+}
+
+.footer-section {
+    
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.contact-info p,
+.newsletter p,
+.quick-links ul {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_h3 {
+    color: #333;
+    margin-bottom: 15px;
+
+}
+.footer_p{
+    color: #333;
+    margin-bottom: 15px;
+   
+}
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    background-color:darkolivegreen;
+    color: #fff;
+    border: none;
+    margin-top: 13px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color:darkolivegreen;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0; /* Добавлено для устранения отступов */
+}
+
+.quick-links ul li {
+    margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+    text-decoration: none;
+    color:darkolivegreen;
+}
+
+.quick-links ul li a:hover {
+    text-decoration: underline;
 }

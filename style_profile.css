@@ -29,10 +29,10 @@ header {
     padding: 0 40px;
 }
 
-header .logo {
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
+.logo {
+  padding-top: 1%;
+  width: 150px;
+  height: 150px;
 }
 
 header nav {

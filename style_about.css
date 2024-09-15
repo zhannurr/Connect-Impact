@@ -27,9 +27,9 @@ header {
 }
 
 .logo {
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
+    padding-top: 1%;
+    width: 150px;
+    height: 150px;
 }
 
 nav {
@@ -162,6 +162,7 @@ nav ul li a:hover {
         padding: 10px;
     }
 }
+
 
 
 footer {
