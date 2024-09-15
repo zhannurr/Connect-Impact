@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -64,7 +68,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('images/mentorship.jpg');
+    background-image: url('images/mentors2.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

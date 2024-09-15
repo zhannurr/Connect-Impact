@@ -101,10 +101,9 @@ nav ul li a:hover {
 .cta-section {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: calc(100vh - 60px); /* Adjust height based on header */
+    justify-content: center; /* Adjust height based on header */
     background-color: #f8f9fa; /* Optional: background color for contrast */
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -257,7 +256,7 @@ footer {
 }
 
 .hero {
-    background: url('images/homepage.jpg') center/cover no-repeat;
+    background: url('images/home.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
