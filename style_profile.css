@@ -10,7 +10,7 @@ body {
     line-height: 1.5;
     margin: 0;
     text-align: left;
-    color: #525f7f;
+    color:green;
     background-color: #f8f9fe;
 }
 
@@ -620,7 +620,7 @@ header .lang-switch a:hover {
   
   .form-control:focus {
     color: #8898aa;
-    border-color: rgba(50, 151, 211, .25);
+    border-color: darkolivegreen;
     outline: 0;
     background-color: #fff;
     box-shadow: none, none;
@@ -1401,11 +1401,11 @@ header .lang-switch a:hover {
   }
   
   .bg-gradient-default {
-    background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
+    background: linear-gradient(87deg, darkolivegreen 0, yellow 100%) !important;
   }
   
   .bg-gradient-default {
-    background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
+    background: linear-gradient(87deg, darkolivegreen 0, #2bffc6 100%) !important;
   }
   
   @keyframes floating-lg {
@@ -1648,7 +1648,7 @@ header .lang-switch a:hover {
   
   .dropdown-menu a.media:hover .heading,
   .dropdown-menu a.media:hover p {
-    color: #172b4d !important;
+    color: darkolivegreen !important;
   }
   
   .footer {
@@ -1766,12 +1766,12 @@ header .lang-switch a:hover {
   
   .focused .input-group-text {
     color: #8898aa;
-    border-color: rgba(50, 151, 211, .25);
+    border-color: darkolivegreen;
     background-color: #fff;
   }
   
   .focused .form-control {
-    border-color: rgba(50, 151, 211, .25);
+    border-color: darkolivegreen;
   }
   
   
@@ -1825,12 +1825,12 @@ header .lang-switch a:hover {
   
   .focused .input-group-text {
     color: #8898aa;
-    border-color: rgba(50, 151, 211, .25);
+    border-color: darkolivegreen;
     background-color: #fff;
   }
   
   .focused .form-control {
-    border-color: rgba(50, 151, 211, .25);
+    border-color: (50, 151, 211, .25);
   }
   
   .mask {
@@ -1853,7 +1853,7 @@ header .lang-switch a:hover {
   @media (max-width: 767.98px) {
     .navbar-nav .nav-link {
       padding: .625rem 0;
-      color: #172b4d !important;
+      color:darkolivegreen !important;
     }
   
     .navbar-nav .dropdown-menu {
