@@ -97,3 +97,161 @@ nav ul li a:hover {
 .lang-switch a:hover {
     opacity: 1;
 }
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px); /* Adjust height based on header */
+    background-color: #f8f9fa; /* Optional: background color for contrast */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cta-container {
+    text-align: center;
+}
+
+.cta-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.cta-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.cta-option-btn {
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.cta-option-btn:hover {
+    background-color: #5a6268;
+}
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px); /* Adjust height based on header */
+    background-color: #f8f9fa; /* Optional: background color for contrast */
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative; /* Needed for positioning the arrows */
+}
+
+.cta-container {
+    text-align: center;
+    position: relative;
+}
+
+.cta-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px); /* Adjust height based on header */
+    background-color: #f8f9fa; /* Optional: background color for contrast */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cta-container {
+    text-align: center;
+    position: relative;
+}
+
+.cta-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 40px;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 12px 20px rgba(0, 123, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.cta-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cta-option-btn {
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(108, 117, 125, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+}
+
+.cta-option-btn:hover {
+    background-color: #5a6268;
+    box-shadow: 0 10px 15px rgba(90, 98, 104, 0.4);
+    transform: translateY(-5px);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
